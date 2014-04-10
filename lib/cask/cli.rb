@@ -148,6 +148,7 @@ class Cask::CLI
 
   def self.process_options(args)
     all_args = Shellwords.shellsplit(ENV['HOMEBREW_CASK_OPTS'] || "") + args
+    puts all_args
     remaining = []
     until all_args.empty?
       begin
