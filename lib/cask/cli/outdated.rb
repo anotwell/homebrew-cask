@@ -1,4 +1,4 @@
-class Cask::CLI::List
+class Cask::CLI::Outdated
   def self.run(*arguments)
     if arguments.any?
       retval = list_outdated_casks(*arguments)
